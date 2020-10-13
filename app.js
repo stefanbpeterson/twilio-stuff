@@ -37,7 +37,7 @@ app.post('/message', function(req, res, next) {
   client.messages.create({
     to: req.body.to,
     from: TWILIO_PHONE_NUMBER,
-    body: 'Ren is a nerd'
+    body: 'Eva is cool!'
   }).then(function(message) {
     // When we get a response from Twilio, respond to the HTTP POST request
     res.send('Message is inbound!');
